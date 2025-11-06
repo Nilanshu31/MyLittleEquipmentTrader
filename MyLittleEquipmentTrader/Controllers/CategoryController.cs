@@ -22,7 +22,7 @@ namespace MyLittleEquipmentTrader.Api.Controllers
 
         // GET: api/category
         [HttpGet]
-        //ftyftyft
+        
         [Authorize(Policy = "CanViewCategories")]
         public async Task<ActionResult<IEnumerable<CategoryDto>>> GetAllCategories()
         {
