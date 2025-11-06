@@ -1,0 +1,6 @@
+@MyLittleEquipmentTrader_HostAddress = http://localhost:5052
+
+GET {{MyLittleEquipmentTrader_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
