@@ -24,7 +24,7 @@ public class ReportController : ControllerBase
         return Ok(reports);
     }
 
-    // POST: /api/Report/filter
+    // POST: /api/Report/filter  
     [HttpPost("filter")]
     [Authorize(Policy = "CanfilterReports")] // You can also create a separate Filter policy if needed
     public async Task<IActionResult> FilterReports([FromBody] ProductFilterRequest request)

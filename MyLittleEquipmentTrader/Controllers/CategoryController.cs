@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 namespace MyLittleEquipmentTrader.Api.Controllers
 {
     [ApiController]
+
     [Route("api/[controller]")]
     public class CategoryController : ControllerBase
     {
@@ -53,7 +54,7 @@ namespace MyLittleEquipmentTrader.Api.Controllers
             return CreatedAtAction(nameof(GetAllCategories), new { id = createdCategory.CategoryID }, createdCategory);
         }
 
-        // DELETE: api/category/{id}
+        // DELETE: api/category/{id}jhjhj
         [HttpDelete("{id}")]
         [Authorize(Policy = "CanDeleteCategories")]
         public async Task<IActionResult> DeleteCategory(int id)
