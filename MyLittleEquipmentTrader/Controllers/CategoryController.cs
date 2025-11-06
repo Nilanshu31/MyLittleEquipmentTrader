@@ -22,8 +22,7 @@ namespace MyLittleEquipmentTrader.Api.Controllers
 
         // GET: api/category
         [HttpGet]
-        
-        // Neem ka Patta Kadva Hai 
+       
         [Authorize(Policy = "CanViewCategories")]
         public async Task<ActionResult<IEnumerable<CategoryDto>>> GetAllCategories()
         {
